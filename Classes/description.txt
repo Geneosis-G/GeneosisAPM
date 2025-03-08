@@ -1,0 +1,30 @@
+You had always dreamed of blowing up everything with baseball balls? Now you can litterally do it!
+
+With this pack of Advanced Pitching Machines, your destruction power is unlimited!
+(Also a good way to clean [url=http://steamcommunity.com/sharedfiles/filedetails/?id=252720137]the clones[/url] you just made :p)
+
+[b]FERATURES[/b]
+- EXPLODING APM: Simple and effective: exploding balls (Michael Bays' favorite APM).
+- COMPACTOR APM: Attract everything around it, then explode after a moment.
+- BLACK HOLE APM: Suck everything out of this universe!
+
+[b]CHARACTERISTICS[/b]
+- Balls now acts as landmines: They will explode when they are touched by a living thing (including you).
+- As for the regular Pitching Machine press [b][R] to fire[/b].
+- You can also press [b][1] to make all balls explode[/b] at the same time.
+- Attracting fields stay active for 10 seconds after being triggered.
+- Not ragdolled body are not attracted by fields.
+- You can't be killed by the black hole.
+
+[b]KNOWN BUGS[/b]
+- Trigger too many balls at the same time can crash the game (array index overflow).
+- Sucking some objects in the black hole can crash the game (sometimes happen with the gas station).
+
+[b]FAQ[/b]
+- I would like more funny balls types, can you do them?
+[i]If you have a precise idea, share it in the comments and I will see if I want to do it.[/i]
+
+[b]DEV NOTES[/b]
+[quote=About this mod]The code of this mod may seems complicated but its not: Most of it is simple re-use of existing mechanisms like explosions and the Devil Goat power ^^
+Exploding and Compactor APM didn't take much time, everything was working fine and as expected. The BLack Hole was the hardest part: Attracting things was okay, but detecting and destroying them was not that easy.
+The center of the problem is that most objects are created with the bNoDelete variable set to true, which means you just can't delete them using the standard function Destroy(). So I had to use a workaround to make object dissapear anyway: If you can't destroy something, put it where the player can't see it nor interact with it :p[/quote]
